@@ -213,7 +213,7 @@ new Vue({
       this.ignoreFields = plugin.storage.getItem('ignoreFields') || [];
       this.autoTrack = plugin.storage.getItem('autoTrack') === false ? false : true;
       this.apikey = plugin.storage.getItem(API_KEY_NAME);
-      logger("onRegistered - this.apikey", this.apikey.length, this.autoTrack);
+      logger("onRegistered - this.apikey", this.apikey?.length, this.autoTrack);
       // Set LocationId and Plugin Id
       this.lid = payload.lid;
       this.pid = payload.pid;
